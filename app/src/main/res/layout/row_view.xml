@@ -18,8 +18,8 @@
             tools:showIn="@layout/activity_main"
             tools:context=".MainActivity">
         <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
                 app:srcCompat="@mipmap/steak"
                 android:id="@+id/imageView"/>
 
@@ -27,6 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/food_name_view"
+                android:layout_marginLeft="10dp"
                 android:textSize="24sp"
                 android:text="@string/default_food_string"
                 android:layout_toEndOf="@id/imageView"
@@ -35,10 +36,14 @@
         <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:stepSize="0.5"
                 android:id="@+id/ratingBar"
                 android:layout_below="@id/food_name_view"
                 android:layout_toEndOf="@id/imageView"
-                android:layout_toRightOf="@id/imageView"/>
+                android:layout_toRightOf="@id/imageView"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                android:transformPivotX="0dp"/>
 
     </RelativeLayout>
 
